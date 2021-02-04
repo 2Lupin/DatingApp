@@ -26,6 +26,7 @@ export class NavComponent implements OnInit {
   }
 
   logout(): void {
+    console.log(this.accountService);
     this.accountService.logout();
     this.router.navigateByUrl('/');
   }
